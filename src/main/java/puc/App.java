@@ -14,6 +14,7 @@ public class App {
      * 
      */
     public static void main(String[] args) {
-        
+        Produtos produtos = new Produtos("", "", "", "");
+        Venda venda = new Venda();
     }
 }
