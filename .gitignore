@@ -1,6 +1,3 @@
-#
-# Standard Maven .gitignore
-#
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -10,19 +7,4 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-
-#
-# IntelliJ
-#
-*.iml
-.idea/*
-!.idea/runConfigurations/
-
-#
-# Visual Studio Code
-#
-.settings/
-.classpath
-.factorypath
-.project
-.vscode/
+.mvn/wrapper/maven-wrapper.jar

@@ -14,7 +14,6 @@ public class App {
      * 
      */
     public static void main(String[] args) {
-        Produtos produtos = new Produtos("", "", "", "");
-        Venda venda = new Venda();
+        System.out.println( "Controle de estoque App!" );
     }
 }
