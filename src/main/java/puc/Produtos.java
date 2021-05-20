@@ -9,6 +9,11 @@ public class Produtos {
     private Double price;
     private LocalDate data;
 
+    /**
+     * Cadastrar Produtos.
+     * 
+     * @return dos Produtos
+     */
     public boolean cadastrarProdutos(Integer id, String product, Double amount, Double price, LocalDate data) {
         if ((amount <= 0.0) || (price <= 0.0))
             throw new IllegalArgumentException("Não são permitidos valores igual ou menor que zero.");
