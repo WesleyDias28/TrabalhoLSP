@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class ProdutosTest {
     @Test
-    public void deveRetornarTrueParaAberturaMenorQueFehamento() {
+    public void deveRetornarTrueParaProdutoCadastrado() {
         Produtos produto = new Produtos();
 
         Boolean produtoCadastrado = produto.cadastrarProdutos(1, "Arroz", 2.0, 3.0, LocalDate.now());
@@ -16,7 +16,7 @@ public class ProdutosTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void deveRetornarUmaExcecaoParaPrecoMaximoMenorDoQueMinimo() {
+    public void deveRetornarUmaExcecaoParaPrecoZerado() {
         Produtos produto = new Produtos();
 
         Boolean produtoCadastrado = produto.cadastrarProdutos(1, "Arroz", 0.0, 0.0, LocalDate.now());
