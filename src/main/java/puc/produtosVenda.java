@@ -15,7 +15,7 @@ public class produtosVenda {
      * 
      * @return Venda dos produtos
      */
-    public void realizarVendaItens(Integer orderNumber, List<Produtos> produto, Double amount, LocalDate data) {
+    public produtosVenda(Integer orderNumber, List<Produtos> produto, Double amount, LocalDate data) {
         Double totalValue;
         if ((amount <= 0.0) || (Value <= 0.0))
             throw new IllegalArgumentException("Não são permitidos valores igual ou menor que zero.");

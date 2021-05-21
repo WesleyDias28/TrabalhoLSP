@@ -14,7 +14,7 @@ public class Produtos {
      * 
      * @return dos Produtos
      */
-    public boolean cadastrarProdutos(Integer id, String product, Double amount, Double price, LocalDate data) {
+    public Produtos(Integer id, String product, Double amount, Double price, LocalDate data) {
         if ((amount <= 0.0) || (price <= 0.0))
             throw new IllegalArgumentException("Não são permitidos valores igual ou menor que zero.");
 
@@ -26,10 +26,6 @@ public class Produtos {
         this.amount = amount;
         this.price = price;
         this.data = data;
-        if (product != "")
-            return true;
-        else
-            return false;
     }
     
     /**
